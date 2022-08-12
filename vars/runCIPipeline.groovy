@@ -2,13 +2,8 @@
 
 def call(parameters) {
     pipeline {
-        agent {
-            label any
-        }
-        options {
-            skipDefaultCheckout()
-            disableConcurrentBuilds()
-        }
+        agent any
+
         stages {
             stage("Config WorkSpace"){
                 steps{
