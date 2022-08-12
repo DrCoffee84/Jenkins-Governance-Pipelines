@@ -1,6 +1,3 @@
 library changelog: false, identifier: 'jenkins-governance-pipelines@main', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', remote: 'https://github.com/DrCoffee84/Jenkins-Governance-Pipelines.git', traits: [gitBranchDiscovery()]])
 
-runCIPipeline   staticCodeAnalysis: "",
-                compileCommands: "mvn -B -DskipTests clean package",
-                testCommands: "mvn test",
-                agent "any"
+runCIPipeline   
