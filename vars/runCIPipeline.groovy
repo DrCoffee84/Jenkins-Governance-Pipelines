@@ -3,7 +3,7 @@
 def call(parameters) {
     pipeline {
         agent {
-            label parameters.agent
+            label any
         }
         options {
             skipDefaultCheckout()
