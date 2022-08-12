@@ -1,4 +1,4 @@
-@Library('Jenkins-Governance-Pipelines')
+@Library(['Jenkins-Governance-Pipelines@main'])
 
 runCIPipeline   staticCodeAnalysis: "",
                 compileCommands: "mvn -B -DskipTests clean package",
