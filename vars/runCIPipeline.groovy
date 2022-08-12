@@ -17,7 +17,10 @@ def call(parameters) {
             }
             stage("Static Code Analysis") {
                 steps {
-                    sh "echo 'todo implementacion'"
+                    script{
+                        sh "echo 'todo implementacion'"
+                        sh "ls"
+                    }                    
                 }
             }
             stage("Build") {
