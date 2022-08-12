@@ -3,4 +3,4 @@
 runCIPipeline   staticCodeAnalysis: "",
                 compileCommands: "mvn -B -DskipTests clean package",
                 testCommands: "mvn test",
-                jenkinsAgent "any"
+                jenkinsAgent "any",
