@@ -1,0 +1,6 @@
+@Library('Jenkins-Governance-Pipelines')
+
+runCIPipeline   staticCodeAnalysis: "",
+                compileCommands: "mvn -B -DskipTests clean package",
+                testCommands: "mvn test",
+                agent "any"
